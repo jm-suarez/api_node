@@ -17,18 +17,18 @@ const {
 } = require('../middlewares/validarUsuario');
 
 /**
- * @route POST /usuario/registro
+ * @route POST /usuario/
  * @description Ruta para registrar un nuevo usuario.
  * @param {Function} usuarioController.registrarUsuario - Controlador para registrar un nuevo usuario.
  */
-router.post('/registro', usuarioController.registrarUsuario);
+router.post('/', validarRegistroUsuario, usuarioController.registrarUsuario);
 
 /**
  * @route POST /usuario/login
  * @description Ruta para iniciar sesión de un usuario.
  * @param {Function} usuarioController.iniciarSesion - Controlador para iniciar sesión de un usuario.
  */
-router.post('/login', usuarioController.iniciarSesion);
+router.post('/login', validarInicioSesion, usuarioController.iniciarSesion);
 
 /**
  * @route GET /usuario/
