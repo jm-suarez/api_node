@@ -86,7 +86,7 @@ node src/seeders/seed.js
 ### Usuarios
 
 - **POST /usuario/login:** Ruta para iniciar sesión de un usuario.
-- 
+  
 - **GET /usuario:** Obtiene todos los usuarios.
 
 - **GET /usuario/:id:** Obtiene un usuario por su ID.
