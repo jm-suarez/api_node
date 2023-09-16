@@ -12,7 +12,7 @@ Antes de comenzar, asegúrate de tener instalados los siguientes requisitos en t
 1. Crea una base de datos en PostgreSQL para el proyecto.
 
 ```sql
-CREATE DATABASE nombre_de_la_base_de_datos;
+CREATE DATABASE usip;
 ```
 
 2. configura config/config.json de Sequelize para el proyecto.
@@ -22,14 +22,14 @@ CREATE DATABASE nombre_de_la_base_de_datos;
   "development": {
     "username": "postgres",
     "password": "postgres",
-    "database": "usip",
+    "database": "usip_dev",
     "host": "localhost",
     "dialect": "postgres"
   },
   "test": {
     "username": "postgres",
     "password": "postgres",
-    "database": "usip",
+    "database": "usip_test",
     "host": "localhost",
     "dialect": "postgres"
   },
@@ -60,7 +60,7 @@ git clone https://github.com/jm-suarez/api_node.git
 5. Navega al directorio del proyecto:
 
 ```plaintext
-cd nombre_del_proyecto
+cd api_node
 ```
 
 6. Instala las dependencias del proyecto:
