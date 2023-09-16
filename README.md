@@ -81,6 +81,30 @@ npx sequelize-cli db:migrate
 node src/seeders/seed.js
 ```
 
+## Endpoints
 
+Rutas Generales
+Usuarios
+GET /usuario: Obtiene todos los usuarios.
+GET /usuario/:id: Obtiene un usuario por su ID.
+POST /usuario: Crea un nuevo usuario.
+PUT /usuario/:id: Actualiza un usuario por su ID.
+DELETE /usuario/:id: Elimina un usuario por su ID.
 
+Categorías
+GET /categoria: Obtiene todas las categorías.
+GET /categoria/:id: Obtiene una categoría por su ID.
+GET /categoria/usuario/:usuarioId: Obtiene todas las categorías de un usuario por su ID.
+POST /categoria: Crea una nueva categoría.
+PUT /categoria/:id: Actualiza una categoría por su ID.
+DELETE /categoria/:id: Elimina una categoría por su ID.
+
+Productos
+GET /producto: Obtiene todos los productos.
+GET /producto/:id: Obtiene un producto por su ID.
+GET /producto/categoria/:categoriaId: Obtiene todos los productos de una categoría por su ID.
+GET /producto/usuario/:usuarioId: Obtiene todos los productos de un usuario por su ID.
+POST /producto: Crea un nuevo producto.
+PUT /producto/:id: Actualiza un producto por su ID.
+DELETE /producto/:id: Elimina un producto por su ID.
 
